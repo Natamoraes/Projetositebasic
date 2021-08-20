@@ -218,7 +218,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">Mande sua mensagem</div>
-                    <form action="#">
+                    <form action="POST" data-netlify="true" id="contact-form">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" placeholder="Nome" required>
@@ -233,6 +233,7 @@
                         <div class="field textarea">
                             <textarea cols="30" rows="10" placeholder="Descreva o projeto" required></textarea>
                         </div>
+                        <div id="captcha" data-netlify-recaptcha="true"></div>
                         <div class="button">
                             <button type="submit">Enviar Mensagem</button>
                         </div>
